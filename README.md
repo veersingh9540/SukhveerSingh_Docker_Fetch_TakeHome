@@ -10,8 +10,7 @@
 
 ### Step-by-Step Setup
 To install all dependencies go to the Analysis Component folder and run the requirements.txt file
-#### cd Analysis_component 
-#### pip install requirements.txt
+![Outputs_Terminal/1](Outputs_Terminal/1)
 
 First of all go to the Docker folder and run this command:
 docker
