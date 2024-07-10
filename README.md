@@ -8,8 +8,8 @@
 - Python 3
 - pip
 ### Otional step to create Virtual env 
-python -m venv venv
-source venv/bin/activate 
+- python -m venv venv
+- source venv/bin/activate 
 
 ### Step-by-Step Setup
 To install all dependencies go to the Analysis Component folder and run the requirements.txt file
