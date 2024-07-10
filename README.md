@@ -43,14 +43,14 @@ for Error handling I have used the missing logs info, if yes it will show error 
 The issue I see is and resolved is with Device_type, that is why i used this parameter but we can perform further analysis and handle it better on all the parameters.
 
 ## Data Flow
-Data is generated and sent to the "user-login" Kafka topic.
-The Kafka consumer script processes this data and sends the results to the processed-user-login topic as requested in the question.
-The script analyzes device types and unique user counts.
+- Data is generated and sent to the "user-login" Kafka topic.
+- The Kafka consumer script processes this data and sends the results to the processed-user-login topic as requested in the question.
+- The script analyzes device types and unique user counts.
 
 ### For Efficiency, Scalability and Fault Tolerance I have implemented:
-Continuous polling of Kafka ensures real-time processing which will Docker keeps everything running smoothly.
-Since, we are using kafka we can say that the application is very scalable, because we can add users anytime. 
-In fault tolerance the docker will restart the failed containers automatically, and we have implemented error handling in the logs above with UID to match. 
+- Continuous polling of Kafka ensures real-time processing which will Docker keeps everything running smoothly.
+- Since, we are using kafka we can say that the application is very scalable, because we can add users anytime. 
+- In fault tolerance the docker will restart the failed containers automatically, and we have implemented error handling in the logs above with UID to match. 
 
 ## Questions to answer: 
 ### How to deploy this app to production?
@@ -59,10 +59,10 @@ To monitor I would prefer Grafana, and Dynatrace.
 
 ## What other component should we add to make this production ready?
 Ans: I can think of these points to make it production ready, there might be more:- 
-Logging with ELK stack.
-Security measures(SSL/TLS, authentication)
-CI/CD pipelines with Jenkins or GitHub Actions.
-Monitoring and alerting systems like Dynatrace or Grafana.
+- Logging with ELK stack.
+- Security measures(SSL/TLS, authentication)
+- CI/CD pipelines with Jenkins or GitHub Actions.
+- Monitoring and alerting systems like Dynatrace or Grafana.
 
 ## How can this application scale with a growing dataset?
 Ans: To scale this app with more load we can use:
