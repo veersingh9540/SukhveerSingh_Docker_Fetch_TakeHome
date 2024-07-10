@@ -24,6 +24,7 @@ Then use the commands below, run consumer.py
 ![Outputs_Terminal](Outputs_Terminal/6.png)
 ### For Agreegating and counts
 ![Outputs_Terminal](Outputs_Terminal/4.png)
+![Outputs_Terminal](Outputs_Terminal/5.png)
 
 ## For Filtering the Data according to States (We can perform more operations)
-![Outputs_Terminal](Outputs_Terminal/5.png)
+
