@@ -65,10 +65,10 @@ CI/CD pipelines with Jenkins or GitHub Actions.
 Monitoring and alerting systems like Dynatrace or Grafana.
 
 ## How can this application scale with a growing dataset?
-#### Ans: To scale this app with more load we can use:
-#### AWS EC2 for autoscaling and deploy on AWS cloud.
-#### Use Kafka’s partitioning to distribute load.
-#### Implement Kafka data compaction for efficient long-term storage.
+Ans: To scale this app with more load we can use:
+- AWS EC2 for autoscaling and deploy on AWS cloud.
+- Use Kafka’s partitioning to distribute load.
+- Implement Kafka data compaction for efficient long-term storage.
 
 
 
