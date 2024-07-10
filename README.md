@@ -71,7 +71,8 @@ Ans: To scale this app with more load we can use:
 - Implement Kafka data compaction for efficient long-term storage.
 
 
-
+## Docker Desktop
+![Outputs_Terminal](Outputs_Terminal/10.png)
 
 
 
