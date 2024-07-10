@@ -65,7 +65,8 @@ def print_data():
                 data = json.loads(msg.value().decode('utf-8'))
                 
                 # Handle missing fields
-                if not data.get('user_id'):
+                # Here device type have some missing values we can troubleshoot more if needed
+                if not data.get('user_id')or not data.get('device_type'):
                     print(f"Skipping message since some of the fields are missing {data.get('user_id')}")
                     continue
                 
@@ -108,8 +109,9 @@ def print_filtered_data(locale_filter=None):
                 data = json.loads(msg.value().decode('utf-8'))
                 
                 # Handle missing fields and data
-                if not data.get('user_id'):
-                    print(f"Skipping message since some of the fields are missing {data.get('user_id')}")
+                # Here device type have some missing values we can troubleshoot more if needed
+                if not data.get('user_id')or not data.get('device_type'):
+                    print(f"Skipping message since some of the fields are missing UID:  {data.get('user_id')}")
                     continue
                 
                 processed_data = process_message(data)
@@ -139,8 +141,8 @@ def print_filtered_data(locale_filter=None):
 def menu():
     while True:
         print("Menu:")
-        print("1. Filter by locale")
-        print("2. Show All Data and user count")
+        print("1. Filter by locale/state in capital letters like MA, NJ, MD etc. ")
+        print("2. Show All Data and User and Device count")
         print("3. Exit (Two times you have to request for EXIT))")
         choice = input("Enter your choice: ")
 
